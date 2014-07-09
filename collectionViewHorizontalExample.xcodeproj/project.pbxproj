@@ -23,6 +23,7 @@
 		DE757ECF196DBF0A00468080 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE757ECD196DBF0A00468080 /* InfoPlist.strings */; };
 		DE757ED1196DBF0A00468080 /* collectionViewHorizontalExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE757ED0196DBF0A00468080 /* collectionViewHorizontalExampleTests.m */; };
 		DE757EDC196DD44500468080 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE757EDB196DD44500468080 /* CustomCell.m */; };
+		DE757EDF196DF09C00468080 /* CustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DE757EDE196DF09C00468080 /* CustomCollectionViewLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		DE757ED0196DBF0A00468080 /* collectionViewHorizontalExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = collectionViewHorizontalExampleTests.m; sourceTree = "<group>"; };
 		DE757EDA196DD44500468080 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		DE757EDB196DD44500468080 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		DE757EDD196DF09C00468080 /* CustomCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewLayout.h; sourceTree = "<group>"; };
+		DE757EDE196DF09C00468080 /* CustomCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 			children = (
 				DE757EB1196DBF0900468080 /* AppDelegate.h */,
 				DE757EB2196DBF0900468080 /* AppDelegate.m */,
+				DE757EDD196DF09C00468080 /* CustomCollectionViewLayout.h */,
+				DE757EDE196DF09C00468080 /* CustomCollectionViewLayout.m */,
 				DE757EB4196DBF0900468080 /* Main_iPhone.storyboard */,
 				DE757EB7196DBF0900468080 /* Main_iPad.storyboard */,
 				DE757EBA196DBF0900468080 /* CustomViewController.h */,
@@ -260,6 +265,7 @@
 			files = (
 				DE757EBC196DBF0900468080 /* CustomViewController.m in Sources */,
 				DE757EB3196DBF0900468080 /* AppDelegate.m in Sources */,
+				DE757EDF196DF09C00468080 /* CustomCollectionViewLayout.m in Sources */,
 				DE757EDC196DD44500468080 /* CustomCell.m in Sources */,
 				DE757EAF196DBF0900468080 /* main.m in Sources */,
 			);

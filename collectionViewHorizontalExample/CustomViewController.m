@@ -7,8 +7,8 @@
 //
 #import "CustomCell.h"
 #import "CustomViewController.h"
-
-@interface CustomViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
+#import "CustomCollectionViewLayout.h"
+@interface CustomViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, CustomViewFlowLayoutDelegate>
 @property (strong,nonatomic) NSArray * datasource;
 
 @end
@@ -20,7 +20,14 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.collectionView.dataSource = self;
-    self.collectionView.delegate = self;
+    
+    
+    CustomCollectionViewLayout *flowLayout = [[CustomCollectionViewLayout alloc]init];
+    self.collectionView.collectionViewLayout = flowLayout;
+
+    flowLayout.delegate = self;
+    self.collectionView.pagingEnabled = YES;
+    
 }
 
 -(NSArray *)datasource
@@ -49,5 +56,20 @@
     
     
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)colView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell* cell = [colView cellForItemAtIndexPath:indexPath];
+    cell.contentView.backgroundColor = [UIColor grayColor];
+}
+- (void)collectionView:(UICollectionView *)colView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell* cell = [colView cellForItemAtIndexPath:indexPath];
+    cell.contentView.backgroundColor = [UIColor whiteColor];
+}
+
+
+- (void)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout cellCenteredAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.pageControl.currentPage = indexPath.row;
 }
 @end
