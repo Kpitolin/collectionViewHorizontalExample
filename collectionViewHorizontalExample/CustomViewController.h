@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CustomViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
 
 @end
