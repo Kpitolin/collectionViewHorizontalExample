@@ -80,7 +80,7 @@
                                 </constraints>
                             </view>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="060-30-zpl">
-                                <rect key="frame" x="141" y="467" width="39" height="37"/>
+                                <rect key="frame" x="141" y="459" width="39" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="pageIndicatorTintColor" white="0.89108120437956206" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="currentPageIndicatorTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -95,8 +95,9 @@
                             <constraint firstItem="To1-XS-c6g" firstAttribute="top" secondItem="sx3-Pe-mpb" secondAttribute="bottom" id="LmB-zJ-fi6"/>
                             <constraint firstAttribute="trailing" secondItem="To1-XS-c6g" secondAttribute="trailing" id="QW3-dV-WR1"/>
                             <constraint firstAttribute="centerX" secondItem="sx3-Pe-mpb" secondAttribute="centerX" id="Sf9-Sh-p03"/>
-                            <constraint firstItem="060-30-zpl" firstAttribute="top" secondItem="To1-XS-c6g" secondAttribute="bottom" constant="8" id="TWl-pA-LyV"/>
+                            <constraint firstItem="060-30-zpl" firstAttribute="top" secondItem="To1-XS-c6g" secondAttribute="bottom" id="TWl-pA-LyV"/>
                             <constraint firstItem="To1-XS-c6g" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="b8T-Zc-YtY"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="060-30-zpl" secondAttribute="bottom" id="i1G-a6-VH1"/>
                             <constraint firstItem="sx3-Pe-mpb" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="kSG-CS-Juu"/>
                             <constraint firstItem="To1-XS-c6g" firstAttribute="leading" secondItem="sx3-Pe-mpb" secondAttribute="leading" id="nri-ex-C1B"/>
                         </constraints>

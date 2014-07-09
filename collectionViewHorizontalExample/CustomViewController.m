@@ -20,7 +20,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.collectionView.dataSource = self;
-    
+    self.collectionView.delegate = self;
     
     CustomCollectionViewLayout *flowLayout = [[CustomCollectionViewLayout alloc]init];
     self.collectionView.collectionViewLayout = flowLayout;
@@ -28,6 +28,7 @@
     flowLayout.delegate = self;
     self.collectionView.pagingEnabled = YES;
     
+    self.pageControl.numberOfPages = [self.datasource count];
 }
 
 -(NSArray *)datasource
@@ -39,6 +40,8 @@
     }
     return _datasource ;
 }
+
+
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section;
 
